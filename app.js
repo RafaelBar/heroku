@@ -15,5 +15,5 @@ app.get ('/reviews', function (req, res) {
 	res.json(thriller.getMostReviews());
 });
 ///////////////////
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('listen 3000');
